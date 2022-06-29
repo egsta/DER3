@@ -15,4 +15,4 @@ app.listen(3000 , ()=>{
         console.log("nos conectamos a la DB");
     })
 
-})
+});
