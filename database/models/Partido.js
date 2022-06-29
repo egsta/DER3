@@ -6,7 +6,7 @@ class Partido extends Model{
         Partido.belongsTo(models.Equipo, {as: "Local", foreignKey: {
             name: 'localId'
           }})
-          Partido.belongsTo(models.Equipo, {as: "Visitane",  foreignKey: {
+          Partido.belongsTo(models.Equipo, {as: "Visitante",  foreignKey: {
             name: 'visitanteId'
           }})
           Partido.hasMany(models.Gol)

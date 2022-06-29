@@ -5,7 +5,7 @@ const { Model, DataTypes } = require('sequelize');
 class Equipo extends Model{
     static associate(models){
         Equipo.hasMany(models.Jugador);
-        Equipo.hasMany(models.Partido, {as: "Visitane",  foreignKey: {
+        Equipo.hasMany(models.Partido, {as: "Visitante",  foreignKey: {
             name: 'visitanteId'
           }});
         Equipo.hasMany(models.Partido, {as: "Local", foreignKey: {
